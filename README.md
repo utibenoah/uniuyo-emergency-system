@@ -1,3 +1,3 @@
-# univery of uyo emergency system
+# university of uyo emergency system
 
 for student use
