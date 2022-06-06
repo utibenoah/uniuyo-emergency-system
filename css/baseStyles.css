@@ -1,41 +1,55 @@
  
 
   /* fonts family */
-@font-face {
-  font-family: 'Rubik Regular';
-  src: url("../fonts/fonts-family/Rubik-Regular.ttf");
-}
-
- /* variables */
-  /* :root{
-    --primary:#FFC636;
-    --secondary:green;
-    --leading:#cc66aa;
-    --button:rgb(10, 207, 233);
-  } */
-  
-
-   /* reset */
- *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  list-style-type: none;
-  text-decoration: none;
-}
-
-  body,html{
-    height: 100%;
+  @font-face {
     font-family: 'Rubik Regular';
+    src: url("../fonts/fonts-family/Rubik-Regular.ttf");
   }
-  body{
+  
+   /* variables */
+    :root{
+      --primary:#FFC636;
+      --secondary:green;
+      --leading:#cc66aa;
+      --button:rgb(10, 207, 233);
+    }
+    
+  
+     /* reset */
+   *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     overflow-x: hidden;
   }
-
- 
-
-
-  /* screen sizes */
+  
+    body,html{
+      height: 100%;
+      font-family: 'Rubik Regular';
+    }
+    body{
+      overflow-x: hidden;
+      font-weight: normal;
+    }
+  
+    /* font sizes */
+    h1,h2,h3,h4{
+      font-weight: normal;
+    }
+  
+    h1,h3{
+      font-size: 1.2em;
+    }
+  
+    h2{
+      font-size: 1.6em;
+    }
+  
+    h4{
+      font-size: 1.1em;
+    }
+  
+  
   @media screen and (min-width:960px) {
     body{
       font-size: 18px;
@@ -47,12 +61,55 @@
       font-size: 20px;
     }
   }
+    
+    /* misscelleneous */
+    .btn{
+        max-width: 48px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 15px;
+        color: #fff;
+        background: #000;
+    }
+    
+    .btn-block{
+      width: 100%;
+    }
+    
+    .fa{
+      font-size: 28px;
+      font-weight: lighter;
+      cursor: pointer;
+      -webkit-text-stroke: 1px white;
+     
+      
+    }
   
+    
+    
+    
+    .modal-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
   
-
-  
-  
-  
-
-
-  
+  .modal-content{
+      width: 100%;
+      max-width: 1060px;
+      background: white;
+      box-shadow: 0px 2px 4px #aaa;
+      border-radius: 8px;
+  }
+  .grid{
+    grid-template-columns: repeat(12,1fr);
+  }
+    
